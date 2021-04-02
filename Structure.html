@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="action.js" defer></script>
+</head>
+<body>
+    <header class="sticky-top bg-info text-center justify-content-center p-4">
+        <h3 class="text-light d-inline-flex">Dictionary</h3> 
+    </header>
+    <main class="container-fluid row">
+        <section class="col-9 d-flex align-content-center text-center">
+            <div class="inputs text-left">
+                <label for="add">Add word to dictionary</label>
+                <input id="word" type="text" name="add">
+                <button type="button" class="btn btn-info" onclick="addWord()">Add</button>
+            </div>
+            <div class="inputs text-left">
+                <label for="search">Search in dictionary</label>
+                <input id="search" type="text" name="search">
+                <button type="button" class="btn btn-info" onclick="searchWord()">Search</button>
+            </div> 
+        </section>
+        <section id="list" class="col text-center mt-5">
+            <!--<div class="w-100 form-control m-1 font-weight-bold">Ala</div>-->           
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
