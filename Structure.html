@@ -14,20 +14,17 @@
         <h3 class="text-light d-inline-flex">Dictionary</h3> 
     </header>
     <main class="container-fluid row">
-        <section class="col-9 d-flex align-content-center text-center">
-            <div class="inputs text-left">
-                <label for="add">Add word to dictionary</label>
-                <input id="word" type="text" name="add">
+        <section class="col-9 d-flex d-flex justify-content-center text-center">
+            <input id="search" type="text" placeholder="Search in dictionary">
+            <button type="button" class="btn btn-info" onclick="searchWord()">Search</button>
+        </section>
+        <section class="col text-center mt-1">
+            <div class="text-center mt-1 mb-2 justify-content-center d-flex">
+                <input class="text-center" id="word" type="text" placeholder="Add word to dictionary">
                 <button type="button" class="btn btn-info" onclick="addWord()">Add</button>
             </div>
-            <div class="inputs text-left">
-                <label for="search">Search in dictionary</label>
-                <input id="search" type="text" name="search">
-                <button type="button" class="btn btn-info" onclick="searchWord()">Search</button>
-            </div> 
-        </section>
-        <section id="list" class="col text-center mt-5">
-            <!--<div class="w-100 form-control m-1 font-weight-bold">Ala</div>-->           
+            <div id="list">
+            </div>          
         </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

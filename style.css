@@ -1,6 +1,5 @@
 body {
-    background-image: url("book.jpg");    
-    background-size: cover;
+    background: url("book.jpg") no-repeat;    
 }
 section.col-9 {
     margin-left: auto;
@@ -14,11 +13,12 @@ label {
 }
 button {
     width: auto;
-    display: inline-block;
+    height: 2.5em
 }
 input {
-    width:50%;
+    width:80%;
+    height: 2.5em;
 }
-.inputs {
-    width:50%
+input#search{
+    width:50%;
 }
